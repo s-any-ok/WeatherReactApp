@@ -38,6 +38,16 @@ class App extends React.Component {
         pressure: data.main.pressure,
         error: "",
       });
+    } else {
+      this.setState({
+        temp: undefined,
+        city: undefined,
+        country: undefined,
+        sunrise: undefined,
+        sunset: undefined,
+        pressure: undefined,
+        error: "Enter the name of the city",
+      });
     }
   };
   render() {
